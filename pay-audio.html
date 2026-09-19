@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Аудиокнига — Моника. Алхимия дна</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://yookassa.ru/integration/simplepay/css/yookassa_construct_form.css?v=1.35.0">
+<style>
+:root{--bg:#0a0908;--card:#1a1612;--gold:#c9a84c;--gold-light:#e8d5a3;--muted:#a89f8f}
+*{box-sizing:border-box} body{margin:0;min-height:100vh;background:var(--bg);color:#f5f0e6;font-family:Manrope,sans-serif;display:flex;align-items:center;justify-content:center;padding:28px}
+.wrap{width:min(620px,100%);text-align:center}.brand{font-family:"Cormorant Garamond",serif;color:var(--gold);letter-spacing:.08em;font-size:1.25rem;margin-bottom:32px}
+.card{background:linear-gradient(165deg,#1e1a15,#14110e);border:1px solid rgba(201,168,76,.25);border-radius:20px;padding:38px 30px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+h1{font-family:"Cormorant Garamond",serif;color:var(--gold-light);font-size:2rem;margin:0 0 8px}.price{font-family:"Cormorant Garamond",serif;color:var(--gold);font-weight:700;font-size:2.5rem;margin:12px 0}.hint{color:var(--muted);margin:0 auto 28px;max-width:460px}
+.yoomoney-payment-form{max-width:460px!important;margin:0 auto!important;text-align:left}.ym-block-title{color:var(--gold-light)!important}.ym-input{width:100%!important}.ym-payment-btn-block{display:block!important;text-align:center!important}.ym-btn-pay{background:linear-gradient(135deg,#c9a84c,#8a6f2e)!important;color:#0a0908!important;border-radius:50px!important;width:100%!important;font-family:Manrope,sans-serif!important;font-weight:700!important;box-shadow:none!important}.ym-logo{margin:18px auto 0!important;display:block!important}.back{display:inline-block;margin-top:26px;color:var(--gold);font-size:.9rem}
+</style>
+</head>
+<body>
+<main class="wrap">
+<div class="brand">МОНИКА. АЛХИМИЯ ДНА</div>
+<section class="card">
+<h1>Аудиокнига</h1>
+<div class="price">990 ₽</div>
+<p class="hint">Укажите email и перейдите к безопасной оплате через ЮKassa.</p>
+<form class="yoomoney-payment-form" action="https://yookassa.ru/integration/simplepay/payment" method="post" accept-charset="utf-8">
+<div class="ym-customer-info"><div class="ym-block-title">О покупателе</div><input name="cps_email" class="ym-input" placeholder="Email" type="email" value="" required></div>
+<div class="ym-hidden-inputs"></div>
+<input name="customerNumber" type="hidden" value="Аудиокнига «Моника. Алхимия дна»">
+<div class="ym-payment-btn-block ym-before-line ym-align-space-between">
+<div class="ym-input-icon-rub ym-display-none"><input name="sum" class="ym-input ym-sum-input ym-required-input" type="number" step="any" value="990"></div>
+<button data-text="Купить за 990 ₽" class="ym-btn-pay ym-result-price"><span class="ym-text-crop">Купить за 990 ₽</span> <span class="ym-price-output"> 990,00&nbsp;₽</span></button>
+<img src="https://yookassa.ru/integration/simplepay/img/iokassa-gray.svg?v=1.35.0" class="ym-logo" width="114" height="27" alt="ЮKassa">
+</div>
+<input name="shopId" type="hidden" value="1443632">
+</form>
+<a class="back" href="index.html#offer">← Вернуться к выбору формата</a>
+</section>
+</main>
+<script src="https://yookassa.ru/integration/simplepay/js/yookassa_construct_form.js?v=1.35.0"></script>
+</body></html>
